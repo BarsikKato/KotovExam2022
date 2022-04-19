@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KotovExam2022", "KotovExam2022\KotovExam2022.csproj", "{05509BCC-A2D8-4347-AEA6-B8ACF2A0F672}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaleLib", "SaleLib\SaleLib.csproj", "{F1AA8BE6-9DE6-4B3D-8C19-D501C973A0F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaleLib", "SaleLib\SaleLib.csproj", "{F1AA8BE6-9DE6-4B3D-8C19-D501C973A0F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamModuleTests", "ExamModuleTests\ExamModuleTests.csproj", "{93841570-C27E-4BA4-966D-0AABE10747F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F1AA8BE6-9DE6-4B3D-8C19-D501C973A0F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1AA8BE6-9DE6-4B3D-8C19-D501C973A0F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1AA8BE6-9DE6-4B3D-8C19-D501C973A0F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93841570-C27E-4BA4-966D-0AABE10747F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93841570-C27E-4BA4-966D-0AABE10747F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93841570-C27E-4BA4-966D-0AABE10747F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93841570-C27E-4BA4-966D-0AABE10747F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

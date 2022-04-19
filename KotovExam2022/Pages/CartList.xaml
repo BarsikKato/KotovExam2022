@@ -14,11 +14,10 @@
                 <StackPanel Orientation="Horizontal">
                     <Image Source="{Binding Image}" Width="140" Height="140" Margin="5"/>
                     <StackPanel Orientation="Vertical" Margin="10" Width="480">
-                        <TextBlock Style="{StaticResource TextStyle}" Text="{Binding Title, FallbackValue=Название: Евгений Онегин}"/>
-                        <TextBlock Style="{StaticResource TextStyle}" Text="{Binding Author, FallbackValue=Автор: А.С. Пушкин}"/>
-                        <TextBlock Style="{StaticResource TextStyle}" Text="{Binding CostFull, FallbackValue=Цена: 200 руб}"/>
-                        <TextBlock Style="{StaticResource TextStyle}" Text="{Binding CountInCart, FallbackValue=Количество: 1 шт.}"/>
-                        <TextBlock Style="{StaticResource TextStyle}" Text="{Binding CostInCart, FallbackValue=Цена: 400 руб}"/>
+                        <TextBlock Style="{StaticResource TextStyle}" Text="{Binding TitleFull, FallbackValue=Название: Евгений Онегин}"/>
+                        <TextBlock Style="{StaticResource TextStyle}" Text="{Binding AuthorFull, FallbackValue=Автор: А.С. Пушкин}"/>
+                        <TextBlock x:Name="CountInCart" Style="{StaticResource TextStyle}" Text="{Binding CountInCart, FallbackValue=Количество: 1 шт.}"/>
+                        <TextBlock x:Name="CostInCart" Style="{StaticResource TextStyle}" Text="{Binding CostFull, FallbackValue=Цена: 0 руб}"/>
                     </StackPanel>
                 </StackPanel>
             </Border>
