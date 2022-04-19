@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Тест интерфейса.docx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="SaleLib.dll" />

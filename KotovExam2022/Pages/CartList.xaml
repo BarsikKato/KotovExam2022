@@ -29,7 +29,7 @@
             <RowDefinition Height="79*"/>
             <RowDefinition Height="340*"/>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0">
+        <Grid Grid.Row="0" Background="AliceBlue">
             <Button x:Name="Back" Click="Back_Click" HorizontalAlignment="Left" Height="30" Margin="10">Назад</Button>
             <Button x:Name="OrderNow" Click="OrderNow_Click" HorizontalAlignment="Right" Height="30" Margin="10">Оформить заказ</Button>
         </Grid>

@@ -7,6 +7,10 @@
         <Style x:Key="TextStyle" TargetType="TextBlock">
             <Setter Property="FontSize" Value="14"/>
             <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+        </Style>
+        <Style x:Key="ButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="Orange"></Setter>
         </Style>
     </Application.Resources>
 </Application>

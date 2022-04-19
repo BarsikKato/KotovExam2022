@@ -28,6 +28,7 @@
                     </StackPanel>
                     <StackPanel>
                         <Button
+                            Style="{DynamicResource ButtonStyle}"
                             x:Name="AddToCart"
                             Height="50" 
                             Width="120" 
@@ -53,7 +54,7 @@
             <RowDefinition Height="79*"/>
             <RowDefinition Height="340*"/>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0">
+        <Grid Grid.Row="0" Background="AliceBlue">
             <Button Click="Button_Click" HorizontalAlignment="Left" Height="30" Margin="10">Корзина</Button>
             <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Right" Width="250">
                 <StackPanel Orientation="Vertical">
