@@ -1,0 +1,40 @@
+﻿<Page x:Class="KotovExam2022.CartList"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:KotovExam2022"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CartList">
+
+    <Page.Resources>
+        <DataTemplate x:Key="BookItem">
+            <Border BorderBrush="Black" BorderThickness="1" Height="160" Margin="5" Background="White">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="{Binding Image}" Width="140" Height="140" Margin="5"/>
+                    <StackPanel Orientation="Vertical" Margin="10" Width="480">
+                        <TextBlock Style="{StaticResource TextStyle}" Text="{Binding Title, FallbackValue=Название: Евгений Онегин}"/>
+                        <TextBlock Style="{StaticResource TextStyle}" Text="{Binding Author, FallbackValue=Автор: А.С. Пушкин}"/>
+                        <TextBlock Style="{StaticResource TextStyle}" Text="{Binding CostFull, FallbackValue=Цена: 200 руб}"/>
+                        <TextBlock Style="{StaticResource TextStyle}" Text="{Binding CountInCart, FallbackValue=Количество: 1 шт.}"/>
+                        <TextBlock Style="{StaticResource TextStyle}" Text="{Binding CostInCart, FallbackValue=Цена: 400 руб}"/>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </DataTemplate>
+    </Page.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="79*"/>
+            <RowDefinition Height="340*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Button x:Name="Back" Click="Back_Click" HorizontalAlignment="Left" Height="30" Margin="10">Назад</Button>
+            <Button x:Name="OrderNow" Click="OrderNow_Click" HorizontalAlignment="Right" Height="30" Margin="10">Оформить заказ</Button>
+        </Grid>
+        <ListBox x:Name="cartList" Grid.Row="1" ItemTemplate="{DynamicResource BookItem}">
+        </ListBox>
+    </Grid>
+</Page>

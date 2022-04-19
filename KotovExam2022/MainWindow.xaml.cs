@@ -25,7 +25,7 @@ namespace KotovExam2022
             InitializeComponent();
             BaseConnect.baseModel = new Entities();
             LoadPage.frameLoad = MainFrame;
-            //MainFrame.Navigate(new BasePage());
+            MainFrame.Navigate(new BooksList(new List<Books>()));
         }
     }
 }

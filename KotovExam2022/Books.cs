@@ -11,7 +11,8 @@ namespace KotovExam2022
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations.Schema;
+
     public partial class Books
     {
         public int Id { get; set; }
@@ -23,5 +24,60 @@ namespace KotovExam2022
         public Nullable<int> CountInStock { get; set; }
         public string Description { get; set; }
         public string Cover { get; set; }
+
+
+        [NotMapped]
+        public string TitleFull
+        {
+            get => "Название: " + Title;
+        }
+
+        [NotMapped]
+        public string GenreFull
+        {
+            get => "Жанр: " + Genre;
+        }
+
+        [NotMapped]
+        public string AuthorFull
+        {
+            get => "Автор: " + Author;
+        }
+
+        [NotMapped]
+        public string CostFull
+        {
+            get => "Цена: " + Cost.ToString();
+        }
+
+        [NotMapped]
+        public string CountInStoreFull
+        {
+            get => "Количество в магазине: " + CountInStore;
+        }
+
+        [NotMapped]
+        public string CountInStockFull
+        {
+            get => "Количество на складе: " + CountInStock;
+        }
+
+        [NotMapped]
+        public int FullCount
+        {
+            get => (int)CountInStock + (int)CountInStore;
+        }
+
+        [NotMapped]
+        public string DescriptionFull
+        {
+            get => "Описание: " + Description;
+        }
+
+        [NotMapped]
+        public string Image
+        {
+            get => "\\" + Cover;
+        }
     }
 }
