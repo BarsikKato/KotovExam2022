@@ -53,13 +53,33 @@ namespace KotovExam2022
         [NotMapped]
         public string CountInStoreFull
         {
-            get => "Количество в магазине: " + CountInStore;
+            get
+            {
+                string count = "Количество в магазине: ";
+                if (CountInStore > 5)
+                    count += "много";
+                else if (CountInStore == 0)
+                    count += "нет";
+                else
+                    count += CountInStore;
+                return count;
+            }
         }
 
         [NotMapped]
         public string CountInStockFull
         {
-            get => "Количество на складе: " + CountInStock;
+            get 
+            {
+                string count = "Количество на складе: ";
+                if (CountInStock > 5)
+                    count += "много";
+                else if (CountInStock == 0)
+                    count += "нет";
+                else
+                    count += CountInStock;
+                return count;
+            }
         }
 
         [NotMapped]
